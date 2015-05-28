@@ -20,7 +20,7 @@ public class FilesResource extends ServerResource {
 
         HeadersHelper.getMessageHeaders(getResponse()).add("Access-Control-Allow-Origin", "*");
 
-        File root = new File("./");
+        File root = new File("/srv/ftp/");
 
 
         ArrayList<FilePresentation> filePresentations = new ArrayList<FilePresentation>();
